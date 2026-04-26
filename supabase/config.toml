@@ -1,0 +1,13 @@
+project_id = "story-stars"
+
+[auth]
+enabled = true
+site_url = "story-stars://"
+enable_signup = true
+enable_anonymous_sign_ins = true
+
+[auth.rate_limit]
+anonymous_users = 30
+
+[functions.moderate-story]
+verify_jwt = true
